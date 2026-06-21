@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kramat Djati — Transportasi Terpercaya Sejak 1974</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="kramat-djati.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a class="nav-brand" href="#">
+    <div class="nav-logo">KD</div>
+    <div class="nav-name">
+      Kramat Djati
+      <span>Sejak 1974</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#layanan">Layanan</a></li>
+    <li><a href="#rute">Rute</a></li>
+    <li><a href="#armada">Armada</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+    <li><a href="https://wa.me/628111620795" class="nav-cta"><img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="phone"> Hubungi CS</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#layanan" onclick="toggleMenu()">Layanan</a>
+  <a href="#rute" onclick="toggleMenu()">Rute & Jadwal</a>
+  <a href="#armada" onclick="toggleMenu()">Armada</a>
+  <a href="#kontak" onclick="toggleMenu()">Kontak</a>
+  <a href="https://wa.me/628111620795" style="color: #25D366; font-weight: 600;">Chat WhatsApp</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-badge">Armada beroperasi normal hari ini</div>
+    <h1 class="hero-title">
+      Perjalanan Nyaman,<br>
+      <span class="accent">Terpercaya</span><br>
+      Sejak 1974
+    </h1>
+    <p class="hero-sub">
+      Lebih dari 50 tahun melayani jutaan penumpang di seluruh Jawa, Sumatera, dan Bali.
+      Pilih rute Anda dan pesan tiket sekarang.
+    </p>
+    <div class="hero-actions">
+      <a href="#rute" class="btn-primary">Lihat Rute</a>
+      <a href="#layanan" class="btn-secondary">Semua Layanan →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-num">50+</span>
+        <span class="stat-label">Tahun Beroperasi</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">30+</span>
+        <span class="stat-label">Rute Tersedia</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">100+</span>
+        <span class="stat-label">Unit Armada</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-illustration">
+      <svg class="bus-svg" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Bus body -->
+        <rect x="20" y="50" width="360" height="110" rx="16" fill="white" fill-opacity="0.15"/>
+        <rect x="20" y="50" width="360" height="110" rx="16" stroke="white" stroke-opacity="0.4" stroke-width="2"/>
+        <!-- Windows -->
+        <rect x="50" y="68" width="52" height="38" rx="6" fill="white" fill-opacity="0.8"/>
+        <rect x="116" y="68" width="52" height="38" rx="6" fill="white" fill-opacity="0.8"/>
+        <rect x="182" y="68" width="52" height="38" rx="6" fill="white" fill-opacity="0.8"/>
+        <rect x="248" y="68" width="52" height="38" rx="6" fill="white" fill-opacity="0.8"/>
+        <!-- Stripe -->
+        <rect x="20" y="115" width="360" height="8" fill="white" fill-opacity="0.2"/>
+        <!-- Front -->
+        <rect x="310" y="62" width="60" height="80" rx="10" fill="white" fill-opacity="0.1" stroke="white" stroke-opacity="0.3" stroke-width="1.5"/>
+        <!-- Headlights -->
+        <ellipse cx="360" cy="88" rx="10" ry="8" fill="#FFD700" fill-opacity="0.9"/>
+        <ellipse cx="360" cy="110" rx="10" ry="6" fill="white" fill-opacity="0.6"/>
+        <!-- Wheels -->
+        <circle cx="90" cy="165" r="22" fill="#1A1A1A" stroke="white" stroke-opacity="0.4" stroke-width="3"/>
+        <circle cx="90" cy="165" r="10" fill="white" fill-opacity="0.3"/>
+        <circle cx="290" cy="165" r="22" fill="#1A1A1A" stroke="white" stroke-opacity="0.4" stroke-width="3"/>
+        <circle cx="290" cy="165" r="10" fill="white" fill-opacity="0.3"/>
+        <!-- Door -->
+        <rect x="28" y="75" width="14" height="55" rx="4" fill="white" fill-opacity="0.4"/>
+        <!-- KRAMAT DJATI text -->
+        <text x="110" y="145" font-family="Arial" font-weight="bold" font-size="18" fill="white" fill-opacity="0.9">KRAMAT DJATI</text>
+      </svg>
+
+      <div class="hero-card card-1">
+        <div class="card-label">Jadwal Terdekat</div>
+        <div class="card-value">Jakarta → Surabaya</div>
+        <div class="card-sub">Berangkat 20.00 WIB · VIP Class</div>
+      </div>
+
+      <div class="hero-card card-2">
+        <div class="card-label">Penumpang Hari Ini</div>
+        <div class="card-value">2.400+</div>
+        <div class="card-sub">Di seluruh rute aktif</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROUTE SEARCH -->
+<div class="search-section reveal" id="cariRute">
+  <div class="search-title">🔍 Cari Rute Perjalanan</div>
+  <div class="search-form">
+    <div class="form-group">
+      <label>Kota Asal</label>
+      <select id="asalSelect">
+        <option value="">Pilih kota asal...</option>
+        <option>Jakarta</option>
+        <option>Bekasi</option>
+        <option>Bandung</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Kota Tujuan</label>
+      <select id="tujuanSelect">
+        <option value="">Pilih tujuan...</option>
+        <option>Surabaya</option>
+        <option>Semarang</option>
+        <option>Lampung</option>
+        <option>Palembang</option>
+        <option>Yogyakarta</option>
+        <option>Bali</option>
+        <option>Malang</option>
+        <option>Solo</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Tanggal Berangkat</label>
+      <input type="date" id="tanggalInput">
+    </div>
+    <button class="btn-search" onclick="cariRute()">
+      <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="search" style="width:18px;height:18px;filter:brightness(0) invert(1);vertical-align:middle"> Cari
+    </button>
+  </div>
+</div>
+
+<!-- ALERT PENIPUAN -->
+<div class="alert-section reveal" style="margin-top: 24px;">
+  <div class="alert-icon"><img src="https://cdn-icons-png.flaticon.com/512/1680/1680012.png" alt="warning" style="width:32px;height:32px"></div>
+  <div>
+    <div class="alert-title">Waspada Penipuan — Pengumuman Resmi</div>
+    <div class="alert-text">
+      Kramat Djati <strong>hanya melayani transaksi resmi</strong> melalui website ini, WhatsApp resmi 
+      <strong>08111620795</strong>, hotline <strong>021-769.3000</strong>, dan platform resmi 
+      (Traveloka, RedBus, Easybook). Jika ada nomor lain yang mengatasnamakan Kramat Djati, 
+      harap <strong>abaikan dan laporkan</strong>.
+    </div>
+  </div>
+</div>
+
+<!-- LAYANAN -->
+<section id="layanan">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-label">Layanan Kami</div>
+      <h2 class="section-title">Lebih dari Sekadar Bus</h2>
+    </div>
+    <a href="#kontak" class="btn-secondary" style="white-space:nowrap">Tanya CS →</a>
+  </div>
+
+  <div class="services-grid">
+    <a href="#rute" class="service-card reveal">
+      <div class="service-arrow">↗</div>
+      <div class="service-icon"><img src="https://cdn-icons-png.flaticon.com/512/2838/2838895.png" alt="tiket"></div>
+      <div class="service-name">Tiket Penumpang</div>
+      <div class="service-desc">Rute AKAP ke Sumatera, Jawa, dan Bali dengan armada VIP dan Executive.</div>
+    </a>
+    <a href="#kontak" class="service-card reveal" style="animation-delay:0.1s">
+      <div class="service-arrow">↗</div>
+      <div class="service-icon"><img src="https://cdn-icons-png.flaticon.com/512/3387/3387212.png" alt="paket"></div>
+      <div class="service-name">Pengiriman Barang</div>
+      <div class="service-desc">Layanan kargo dan pengiriman paket antar kota dengan aman dan terpercaya.</div>
+    </a>
+    <a href="#kontak" class="service-card reveal" style="animation-delay:0.2s">
+      <div class="service-arrow">↗</div>
+      <div class="service-icon"><img src="https://cdn-icons-png.flaticon.com/512/3480/3480823.png" alt="food"></div>
+      <div class="service-name">Food & Beverages</div>
+      <div class="service-desc">Tersedia snack dan minuman untuk perjalanan nyaman di atas bus.</div>
+    </a>
+    <a href="#kontak" class="service-card reveal" style="animation-delay:0.3s">
+      <div class="service-arrow">↗</div>
+      <div class="service-icon"><img src="https://cdn-icons-png.flaticon.com/512/1023/1023541.png" alt="bus"></div>
+      <div class="service-name">Charter Bus</div>
+      <div class="service-desc">Sewa bus untuk study tour, wisata grup, event perusahaan, dan perjalanan khusus.</div>
+    </a>
+  </div>
+</section>
+
+<!-- RUTE -->
+<div class="routes-section reveal" id="rute">
+  <div class="section-header" style="margin-bottom:32px">
+    <div>
+      <div class="section-label">Rute & Jadwal</div>
+      <h2 class="section-title" style="color:white">Kemana Anda Mau Pergi?</h2>
+    </div>
+  </div>
+
+  <div class="routes-tabs">
+    <button class="tab active" onclick="filterRute('semua', this)">Semua Rute</button>
+    <button class="tab" onclick="filterRute('sumatera', this)">Sumatera</button>
+    <button class="tab" onclick="filterRute('jatim', this)">Jawa Timur</button>
+    <button class="tab" onclick="filterRute('jateng', this)">Jawa Tengah</button>
+    <button class="tab" onclick="filterRute('bali', this)">Bali</button>
+  </div>
+
+  <div class="routes-grid" id="routesGrid">
+    <!-- Sumatera -->
+    <div class="route-card visible" data-region="sumatera">
+      <div class="route-from-to">
+        <div class="route-city">Jakarta</div>
+        <div class="route-arrow">→</div>
+        <div class="route-city">Lampung</div>
+      </div>
+      <div class="route-badges">
+        <span class="badge badge-class">VIP Class</span>
+        <span class="badge badge-cap">34 Kursi</span>
+        <span class="badge badge-fac">Snack</span>
+      </div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.5">
+        Pondok Pinang → Kalideres → Poris → Merak → Bandar Jaya
+      </div>
+      <div class="route-price">
+        <div>
+          <div class="price-label">Mulai dari</div>
+          <div class="price-value">Rp 175.000</div>
+        </div>
+        <a href="https://www.traveloka.com" target="_blank" class="route-book">Beli Tiket →</a>
+      </div>
+    </div>
+
+    <div class="route-card visible" data-region="sumatera">
+      <div class="route-from-to">
+        <div class="route-city">Jakarta</div>
+        <div class="route-arrow">→</div>
+        <div class="route-city">Palembang</div>
+      </div>
+      <div class="route-badges">
+        <span class="badge badge-class">VIP Class</span>
+        <span class="badge badge-cap">34 Kursi</span>
+        <span class="badge badge-fac">Snack + Toilet</span>
+      </div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.5">
+        Pondok Pinang → Kalideres → Merak → Lampung → Palembang
+      </div>
+      <div class="route-price">
+        <div>
+          <div class="price-label">Mulai dari</div>
+          <div class="price-value">Rp 280.000</div>
+        </div>
+        <a href="https://www.traveloka.com" target="_blank" class="route-book">Beli Tiket →</a>
+      </div>
+    </div>
+
+    <div class="route-card visible" data-region="sumatera">
+      <div class="route-from-to">
+        <div class="route-city">Bekasi</div>
+        <div class="route-arrow">→</div>
+        <div class="route-city">Palembang</div>
+      </div>
+      <div class="route-badges">
+        <span class="badge badge-class">VIP Class</span>
+        <span class="badge badge-cap">34 Kursi</span>
+        <span class="badge badge-fac">Snack</span>
+      </div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.5">
+        Pulo Gebang → Cililitan → Kp.Rambutan → Merak → Palembang
+      </div>
+      <div class="route-price">
+        <div>
+          <div class="price-label">Mulai dari</div>
+          <div class="price-value">Rp 260.000</div>
+        </div>
+        <a href="https://www.traveloka.com" target="_blank" class="route-book">Beli Tiket →</a>
+      </div>
+    </div>
+
+    <!-- Jawa Timur -->
+    <div class="route-card visible" data-region="jatim">
+      <div class="route-from-to">
+        <div class="route-city">Jakarta</div>
+        <div class="route-arrow">→</div>
+        <div class="route-city">Surabaya</div>
+      </div>
+      <div class="route-badges">
+        <span class="badge badge-class">Executive</span>
+        <span class="badge badge-cap">34 Kursi</span>
+        <span class="badge badge-fac">AC + Toilet</span>
+      </div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.5">
+        Pulogadung → Semarang → Solo → Surabaya
+      </div>
+      <div class="route-price">
+        <div>
+          <div class="price-label">Mulai dari</div>
+          <div class="price-value">Rp 230.000</div>
+        </div>
+        <a href="https://www.traveloka.com" target="_blank" class="route-book">Beli Tiket →</a>
+      </div>
+    </div>
+
+    <div class="route-card visible" data-region="jatim">
+      <div class="route-from-to">
+        <div class="route-city">Jakarta</div>
+        <div class="route-arrow">→</div>
+        <div class="route-city">Malang</div>
+      </div>
+      <div class="route-badges">
+        <span class="badge badge-class">VIP Class</span>
+        <span class="badge badge-cap">30 Kursi</span>
+        <span class="badge badge-fac">Snack + Legrest</span>
+      </div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.5">
+        Pulogadung → Semarang → Solo → Surabaya → Malang
+      </div>
+      <div class="route-price">
+        <div>
+          <div class="price-label">Mulai dari</div>
+          <div class="price-value">Rp 265.000</div>
+        </div>
+        <a href="https://www.traveloka.com" target="_blank" class="route-book">Beli Tiket →</a>
+      </div>
+    </div>
+
+    <!-- Jawa Tengah -->
+    <div class="route-card visible" data-region="jateng">
+      <div class="route-from-to">
+        <div class="route-city">Jakarta</div>
+        <div class="route-arrow">→</div>
+        <div class="route-city">Semarang</div>
+      </div>
+      <div class="route-badges">
+        <span class="badge badge-class">Executive</span>
+        <span class="badge badge-cap">34 Kursi</span>
+        <span class="badge badge-fac">AC + Snack</span>
+      </div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.5">
+        Pulogadung → Cirebon → Semarang
+      </div>
+      <div class="route-price">
+        <div>
+          <div class="price-label">Mulai dari</div>
+          <div class="price-value">Rp 135.000</div>
+        </div>
+        <a href="https://www.traveloka.com" target="_blank" class="route-book">Beli Tiket →</a>
+      </div>
+    </div>
+
+    <div class="route-card visible" data-region="jateng">
+      <div class="route-from-to">
+        <div class="route-city">Jakarta</div>
+        <div class="route-arrow">→</div>
+        <div class="route-city">Yogyakarta</div>
+      </div>
+      <div class="route-badges">
+        <span class="badge badge-class">VIP Class</span>
+        <span class="badge badge-cap">34 Kursi</span>
+        <span class="badge badge-fac">AC + Toilet</span>
+      </div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.5">
+        Pulogadung → Cirebon → Solo → Yogyakarta
+      </div>
+      <div class="route-price">
+        <div>
+          <div class="price-label">Mulai dari</div>
+          <div class="price-value">Rp 155.000</div>
+        </div>
+        <a href="https://www.traveloka.com" target="_blank" class="route-book">Beli Tiket →</a>
+      </div>
+    </div>
+
+    <!-- Bali -->
+    <div class="route-card visible" data-region="bali">
+      <div class="route-from-to">
+        <div class="route-city">Jakarta</div>
+        <div class="route-arrow">→</div>
+        <div class="route-city">Bali</div>
+      </div>
+      <div class="route-badges">
+        <span class="badge badge-class">VIP Class</span>
+        <span class="badge badge-cap">34 Kursi</span>
+        <span class="badge badge-fac">Snack + Toilet</span>
+      </div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.6);line-height:1.5">
+        Pulogadung → Semarang → Surabaya → Denpasar
+      </div>
+      <div class="route-price">
+        <div>
+          <div class="price-label">Mulai dari</div>
+          <div class="price-value">Rp 350.000</div>
+        </div>
+        <a href="https://www.traveloka.com" target="_blank" class="route-book">Beli Tiket →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ARMADA -->
+<section id="armada">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-label">Armada Kami</div>
+      <h2 class="section-title">Bus Modern & Terawat</h2>
+    </div>
+  </div>
+
+  <div class="fleet-grid">
+    <div class="fleet-card reveal">
+      <div class="fleet-img">
+        <div class="fleet-bus-icon"><img src="https://cdn-icons-png.flaticon.com/512/1023/1023541.png" alt="bus executive" style="filter:brightness(0) invert(1)"></div>
+      </div>
+      <div class="fleet-info">
+        <div class="fleet-name">Bus Executive</div>
+        <div class="fleet-desc">Armada unggulan dengan kursi recliner lebar, legrest, dan fasilitas premium untuk perjalanan jauh.</div>
+        <div class="fleet-specs">
+          <div class="spec-item"><div class="spec-label">Kapasitas</div><div class="spec-value">34 Kursi</div></div>
+          <div class="spec-item"><div class="spec-label">AC</div><div class="spec-value">Double Blower</div></div>
+          <div class="spec-item"><div class="spec-label">Toilet</div><div class="spec-value">Tersedia</div></div>
+          <div class="spec-item"><div class="spec-label">Hiburan</div><div class="spec-value">LCD Monitor</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fleet-card reveal" style="transition-delay:0.1s">
+      <div class="fleet-img" style="background:var(--dark)">
+        <div class="fleet-bus-icon"><img src="https://cdn-icons-png.flaticon.com/512/3448/3448353.png" alt="bus patas" style="filter:brightness(0) invert(1)"></div>
+      </div>
+      <div class="fleet-info">
+        <div class="fleet-name">Bus Patas</div>
+        <div class="fleet-desc">Armada ekonomi terbaik dengan kenyamanan tinggi untuk rute jarak menengah.</div>
+        <div class="fleet-specs">
+          <div class="spec-item"><div class="spec-label">Kapasitas</div><div class="spec-value">48 Kursi</div></div>
+          <div class="spec-item"><div class="spec-label">AC</div><div class="spec-value">Single Blower</div></div>
+          <div class="spec-item"><div class="spec-label">Toilet</div><div class="spec-value">-</div></div>
+          <div class="spec-item"><div class="spec-label">Hiburan</div><div class="spec-value">Audio Sistem</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fleet-card reveal" style="transition-delay:0.2s">
+      <div class="fleet-img" style="background:var(--gold)">
+        <div class="fleet-bus-icon"><img src="https://cdn-icons-png.flaticon.com/512/620/620851.png" alt="medium bus" style="filter:brightness(0) invert(1)"></div>
+      </div>
+      <div class="fleet-info">
+        <div class="fleet-name">Medium Bus</div>
+        <div class="fleet-desc">Ideal untuk charter grup kecil, study tour, dan perjalanan wisata dalam kota.</div>
+        <div class="fleet-specs">
+          <div class="spec-item"><div class="spec-label">Kapasitas</div><div class="spec-value">25 Kursi</div></div>
+          <div class="spec-item"><div class="spec-label">AC</div><div class="spec-value">Tersedia</div></div>
+          <div class="spec-item"><div class="spec-label">Toilet</div><div class="spec-value">-</div></div>
+          <div class="spec-item"><div class="spec-label">Hiburan</div><div class="spec-value">Audio Sistem</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING PARTNERS -->
+<div class="partners-section reveal">
+  <div class="section-label" style="text-align:center">Platform Pemesanan Resmi</div>
+  <h2 class="section-title" style="text-align:center;margin:0 auto">Beli Tiket Melalui</h2>
+  <p style="text-align:center;color:var(--gray);margin-top:12px;font-size:14px">Platform berikut adalah mitra resmi Kramat Djati untuk pemesanan tiket online</p>
+  <div class="partners-grid">
+    <a href="https://www.traveloka.com" target="_blank" class="partner-btn">
+      <div class="partner-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Traveloka_Logo.svg/320px-Traveloka_Logo.svg.png" alt="Traveloka" style="width:90px;height:32px;object-fit:contain"></div>
+      <div class="partner-name">Traveloka</div>
+      <div class="partner-sub">Tersedia di app & web</div>
+    </a>
+    <a href="https://www.redbus.id" target="_blank" class="partner-btn">
+      <div class="partner-icon"><img src="https://cdn-icons-png.flaticon.com/512/1023/1023541.png" alt="RedBus" style="width:40px;height:40px;filter:hue-rotate(0deg) saturate(5) brightness(0.7)"></div>
+      <div class="partner-name">RedBus</div>
+      <div class="partner-sub">Spesialis bus online</div>
+    </a>
+    <a href="https://www.easybook.com" target="_blank" class="partner-btn">
+      <div class="partner-icon"><img src="https://cdn-icons-png.flaticon.com/512/2838/2838895.png" alt="Easybook" style="width:40px;height:40px"></div>
+      <div class="partner-name">Easybook</div>
+      <div class="partner-sub">Mudah & cepat</div>
+    </a>
+  </div>
+</div>
+
+<!-- KONTAK -->
+<section id="kontak" style="padding: 80px 12px;">
+  <div class="contact-section reveal">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label">Hubungi Kami</div>
+        <h2 class="section-title">Ada Pertanyaan? Kami Siap Membantu</h2>
+        <p style="margin-top:16px;color:rgba(255,255,255,0.7);font-size:15px;line-height:1.7">
+          Tim CS kami siap melayani Anda setiap hari. Hubungi kami untuk informasi rute, pemesanan charter, 
+          atau pengiriman barang.
+        </p>
+        <a href="https://wa.me/628111620795" target="_blank" class="wa-btn">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="whatsapp"> Chat WhatsApp Sekarang
+        </a>
+      </div>
+      <div class="contact-items">
+        <a href="tel:0217693000" class="contact-item">
+          <div class="contact-item-icon"><img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="phone" style="filter:brightness(0) invert(1)"></div>
+          <div>
+            <div class="contact-item-label">Hotline</div>
+            <div class="contact-item-value">021-769.3000</div>
+          </div>
+        </a>
+        <a href="tel:08111620795" class="contact-item">
+          <div class="contact-item-icon"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="whatsapp" style="filter:brightness(0) invert(1)"></div>
+          <div>
+            <div class="contact-item-label">WhatsApp CS</div>
+            <div class="contact-item-value">0811-1620-795</div>
+          </div>
+        </a>
+        <a href="mailto:kramatdjati.jakarta@gmail.com" class="contact-item">
+          <div class="contact-item-icon"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="email" style="filter:brightness(0) invert(1)"></div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value">kramatdjati.jakarta@gmail.com</div>
+          </div>
+        </a>
+        <div class="contact-item" style="cursor:default">
+          <div class="contact-item-icon"><img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="lokasi" style="filter:brightness(0) invert(1)"></div>
+          <div>
+            <div class="contact-item-label">Kantor Pusat</div>
+            <div class="contact-item-value">Jl. Ciputat Raya No.190, Pasar Jumat, Jakarta Selatan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="nav-brand" style="display:flex;gap:10px;align-items:center;margin-bottom:12px">
+        <div class="nav-logo">KD</div>
+        <div class="nav-name">Kramat Djati<span>Sejak 1974</span></div>
+      </div>
+      <div class="footer-brand-desc">
+        Lebih dari 50 tahun melayani transportasi antar kota Indonesia dengan motto 
+        "Transportasi yang Dapat Diandalkan."
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Layanan</h4>
+      <div class="footer-links">
+        <a href="#rute">Tiket Bus</a>
+        <a href="#kontak">Pengiriman Barang</a>
+        <a href="#kontak">Charter Bus</a>
+        <a href="#kontak">Food & Beverages</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Informasi</h4>
+      <div class="footer-links">
+        <a href="#">Tentang Kami</a>
+        <a href="#">Karir</a>
+        <a href="#">FAQ</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Agen Resmi</h4>
+      <div class="footer-links">
+        <a href="https://www.traveloka.com" target="_blank">Traveloka</a>
+        <a href="https://www.redbus.id" target="_blank">RedBus</a>
+        <a href="https://www.easybook.com" target="_blank">Easybook</a>
+        <a href="https://wa.me/628111620795">Hubungi CS</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 PT Kramat Djati. Semua hak dilindungi.</div>
+    <div class="footer-socials">
+      <a href="https://instagram.com/kramatdjatijakarta" target="_blank" class="social-btn" title="Instagram"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+      <a href="https://www.youtube.com/watch?v=AZ4eyCBZCq4" target="_blank" class="social-btn" title="YouTube"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+      <a href="https://wa.me/628111620795" target="_blank" class="social-btn" title="WhatsApp"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
+    </div>
+  </div>
+</footer>
+
+<!-- WA FLOAT BUTTON -->
+<a href="https://wa.me/628111620795" target="_blank" class="wa-float" title="Chat WhatsApp"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width:30px;height:30px;filter:brightness(0) invert(1)"></a>
+
+<script>
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  // Mobile menu
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('nav') && !e.target.closest('#mobileMenu')) {
+      document.getElementById('mobileMenu').classList.remove('open');
+    }
+  });
+
+  // Route filter tabs
+  function filterRute(region, btn) {
+    // Update active tab
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+
+    // Filter cards
+    document.querySelectorAll('.route-card').forEach(card => {
+      if (region === 'semua' || card.dataset.region === region) {
+        card.classList.add('visible');
+      } else {
+        card.classList.remove('visible');
+      }
+    });
+  }
+
+  // Set min date to today
+  const today = new Date().toISOString().split('T')[0];
+  document.getElementById('tanggalInput').min = today;
+  document.getElementById('tanggalInput').value = today;
+
+  // Route search
+  function cariRute() {
+    const asal = document.getElementById('asalSelect').value;
+    const tujuan = document.getElementById('tujuanSelect').value;
+    if (!asal || !tujuan) {
+      alert('Pilih kota asal dan tujuan terlebih dahulu!');
+      return;
+    }
+    document.getElementById('rute').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
